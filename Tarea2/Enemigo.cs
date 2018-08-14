@@ -8,7 +8,40 @@ namespace Tarea2
 {
     class Enemigo
     {
-        public int posX;
-        public int posY;
+        public int PosX;
+        public int PosY;
+
+
+        private int _puntos;
+        public int Puntos
+        {
+            get
+            {
+                return _puntos;
+            }
+            set
+            {
+               if(_puntos < 100)
+                {
+                    _puntos = 100;
+                }
+            }
+        }
+
+
+        public void movimiento()
+        {
+
+        }
+
+        public void disparo()
+        {
+
+        }
+
+        public void explotar()
+        {
+
+        }
     }
 }
